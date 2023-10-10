@@ -1,0 +1,10 @@
+<h1>投稿一覧</h1>
+<% @lists.each do |list| %>
+
+<h4>タイトル</h4>
+<%= list.title %>
+
+<h4>本文</h4>
+<%= list.body %>
+
+<% end %>
