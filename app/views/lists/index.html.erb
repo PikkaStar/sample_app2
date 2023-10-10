@@ -2,9 +2,15 @@
 <% @lists.each do |list| %>
 
 <h4>タイトル</h4>
+<%= link_to list_path(list.id) do %>
 <%= list.title %>
+<% end %>
 
 <h4>本文</h4>
 <%= list.body %>
+
+<h4>投稿画像</h4>
+<%= image_tag list.get_image %>
+
 
 <% end %>
